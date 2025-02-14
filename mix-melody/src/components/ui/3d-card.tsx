@@ -1,9 +1,8 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { cn } from "@/utils/cn";
-import Image from "next/image";
+// import Image from "next/image";
 import React, {
   createContext,
   useState,
@@ -124,7 +123,7 @@ export const CardItem = ({
 
   useEffect(() => {
     handleAnimations();
-  }, [isMouseEntered]);
+  });
 
   const handleAnimations = () => {
     if (!ref.current) return;
