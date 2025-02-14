@@ -6,8 +6,8 @@ import courseData from "@/data/music_courses.json";
 
 function page() {
   return (
-    <div className="min-h-screen bg-black py-12 pt-36">
-      <h1 className="text-lg md:text-5xl text-center font-sans font-bold text-white">
+    <div className="min-h-screen bg-black">
+      <h1 className="text-lg py-12 pt-36 md:text-5xl text-center font-sans font-bold text-white">
         All courses
         {/* ({courseData.courses.length}) */}
       </h1>
@@ -31,8 +31,8 @@ function page() {
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
                   src={course.image}
-                  height="1000"
-                  width="1000"
+                  height="800"
+                  width="800"
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   alt={course.title}
                 />
