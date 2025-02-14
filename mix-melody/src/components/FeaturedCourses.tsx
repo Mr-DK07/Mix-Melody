@@ -42,12 +42,18 @@ function FeaturedCourses() {
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
                     {course.description}
                   </p>
-                  <Link href={`/courses/${course.slug}`} className="rounded- 2xl p-2 mt-2 dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800">Learn More</Link>
+
+                  <Link
+                    href={`/courses/${course.slug}`}
+                    className="rounded-[10px] p-2 mt-4 bg-sky-200 dark:bg-cyan-600 text-black dark:text-white border-neutral-400 dark:border-slate-800"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </BackgroundGradient>
             </div>
           ))}
-
+          
         </div>
       </div>
 
@@ -56,7 +62,7 @@ function FeaturedCourses() {
           <Button
             borderRadius="1rem"
             className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800"
-            >
+          >
             View All courses
           </Button>
         </Link>
