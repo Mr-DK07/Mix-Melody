@@ -51,7 +51,7 @@ function UpcomingWebinars() {
   ];
 
   return (
-    <div className="p-12 bg-gray-900">
+    <div className="h-auto py-[8rem] bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
@@ -75,8 +75,8 @@ function UpcomingWebinars() {
         <div className="mt-10 text-center">
           <Link href={"/"}>
             <Button
-              borderRadius="1rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800"
+              borderRadius="1.75rem"
+              className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800 dark:hover:bg-cyan-600"
             >
               View All webinars
             </Button>

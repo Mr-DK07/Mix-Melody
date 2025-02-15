@@ -19,7 +19,7 @@ function FeaturedCourses() {
     (course: Course) => course.isFeatured
   );
   return (
-    <div className="py-10 bg-gray-900 dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+    <div className="h-auto py-[8rem] bg-gray-900 dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
       <div className="text-center">
         <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
           FEATURED COURSES
@@ -31,10 +31,9 @@ function FeaturedCourses() {
 
       <div className="mt-10 mx-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-
           {featuredCourses.map((course: Course) => (
             <div key={course.id} className="flex justify-center">
-              <BackgroundGradient className="flex flex-col rounded-[10px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+              <BackgroundGradient className="flex flex-col rounded-[15px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                     {course.title}
@@ -45,7 +44,7 @@ function FeaturedCourses() {
 
                   <Link
                     href={`/courses/${course.slug}`}
-                    className="rounded-[10px] p-2 mt-4 bg-sky-200 dark:bg-cyan-600 text-black dark:text-white border-neutral-400 dark:border-slate-800"
+                    className="rounded-[15px] p-2 mt-4 bg-sky-200 dark:bg-cyan-600 text-black dark:text-white border-neutral-400 dark:border-slate-800 dark:hover:bg-cyan-700"
                   >
                     Learn More
                   </Link>
@@ -53,15 +52,14 @@ function FeaturedCourses() {
               </BackgroundGradient>
             </div>
           ))}
-          
         </div>
       </div>
 
       <div className="mt-20 text-center">
         <Link href={"/courses"}>
           <Button
-            borderRadius="1rem"
-            className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800"
+            borderRadius="1.75rem"
+            className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800 dark:hover:bg-cyan-600"
           >
             View All courses
           </Button>

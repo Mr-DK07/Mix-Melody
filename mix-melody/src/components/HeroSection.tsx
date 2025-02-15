@@ -6,7 +6,6 @@ function HeroSection() {
   return (
     <div className="h-auto md:h-[40rem] bg-gray-950 w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
       <div className="p-4 relative z-10 w-full text-center">
-
         <Spotlight
           className="-top-35 left-0 md:left-60 md:-top-20"
           fill="beige"
@@ -25,7 +24,7 @@ function HeroSection() {
           <Link href={"/courses"}>
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800"
+              className="bg-white dark:bg-black text-black dark:text-white border-neutral-400 dark:border-slate-800 dark:hover:bg-cyan-600"
             >
               Explore courses
             </Button>
