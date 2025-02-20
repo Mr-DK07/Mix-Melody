@@ -14,6 +14,7 @@ interface Course {
   isFeatured: boolean;
 }
 
+// featured courses
 function FeaturedCourses() {
   const featuredCourses = courseData.courses.filter(
     (course: Course) => course.isFeatured
