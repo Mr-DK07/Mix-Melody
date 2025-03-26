@@ -76,7 +76,7 @@ function Footer() {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
           <p>New Delhi, India</p>
-          <p>Delhi 10001</p>
+          <p>Delhi 1001</p>
           <p>Email: info@musicschool.com</p>
           <p>Phone: (123) 456-7890</p>
         </div>
